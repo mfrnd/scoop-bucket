@@ -1,0 +1,26 @@
+name: Excavator
+# Auto-updates the manifests in bucket/ from upstream releases (via each
+# manifest's checkver/autoupdate) and commits the bumped version + hashes.
+on:
+  schedule:
+    - cron: '15 6 * * *'   # daily 06:15 UTC
+  workflow_dispatch:
+
+concurrency:
+  group: excavator
+  cancel-in-progress: false
+
+jobs:
+  excavate:
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Excavate
+        uses: ScoopInstaller/GithubActions@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
