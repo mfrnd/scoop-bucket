@@ -1,16 +1,16 @@
 {
-    "version": "2026.19.1",
+    "version": "2026.20.1",
     "description": "SourceGit - Git GUI (mfrnd fork with the 'uncommitted changes in history' feature).",
     "homepage": "https://github.com/mfrnd/sourcegit",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mfrnd/sourcegit/releases/download/v2026.19.1/sourcegit_2026.19.1.win-x64.zip",
-            "hash": "1d26b3cd88d196881e0334a9105ddae5e60b77922b2271c659ada9cb34e2f0cd"
+            "url": "https://github.com/mfrnd/sourcegit/releases/download/v2026.20.1/sourcegit_2026.20.1.win-x64.zip",
+            "hash": "c2b88bfd0487aadfc293422deee4ccf37d0cb928e8a0e02f5cd92ade9192f13e"
         },
         "arm64": {
-            "url": "https://github.com/mfrnd/sourcegit/releases/download/v2026.19.1/sourcegit_2026.19.1.win-arm64.zip",
-            "hash": "9a639532e77b6c19f5a501f9465201d7279e87aab6e8b3bf23aa8e079ab825da"
+            "url": "https://github.com/mfrnd/sourcegit/releases/download/v2026.20.1/sourcegit_2026.20.1.win-arm64.zip",
+            "hash": "3d2715a6994730e5c996fd25690c43d9d34aca24fb5645a420ef41e9bca77811"
         }
     },
     "extract_dir": "SourceGit",
